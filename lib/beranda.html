@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/font/popins.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script script src="/node_modules/bootstrap/js/dist/button.js"></script>
+    <script src="/node_modules/bootstrap/js/dist/dropdown.js"></script>
+    
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .btn-bd-primary {
+          --bd-violet-bg: #712cf9;
+          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+          --bs-btn-font-weight: 600;
+          --bs-btn-color: var(--bs-white);
+          --bs-btn-bg: var(--bd-violet-bg);
+          --bs-btn-border-color: var(--bd-violet-bg);
+          --bs-btn-hover-color: var(--bs-white);
+          --bs-btn-hover-bg: #6528e0;
+          --bs-btn-hover-border-color: #6528e0;
+          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+          --bs-btn-active-color: var(--bs-btn-hover-color);
+          --bs-btn-active-bg: #5a23c8;
+          --bs-btn-active-border-color: #5a23c8;
+        }
+  
+        .bd-mode-toggle {
+          z-index: 1500;
+        }
+  
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+      </style>
+</head>
+<header class="py-3 mb-3 border-bottom" style="background-color:#b6731b; width:260%; height:78px ;">
+  <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+      <img src="/asset/vf-transformed.png" alt="mdo" width="100" height="100" style="margin-top: -30px;">
+      <div class="flex-shrink-0 dropdown" style="margin-left: 650px;">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<body background="/images/meetings-page-bg.jpg">
+  <div class="container-xl">
+    <div class="intorduction">
+            <h1 class="main-text" style="text-align: center; color: rgb(255, 189, 66);">Revolusi Pembelajaran: Temukan Ilmu Baru
+            Melalui Video Interaktif</h1>
+            <p class="second-text" style="text-align: center; color: white;">Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi.
+             Tidak hanya itu, Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda.<p>
+            <p style="text-align: center;"><a href="#" class="btn btn-warning" >Temukan Video Course Untuk Dipelajari</a></p>
+    </div>
+</div>
+    <div class="navbar-text">
+        <h4 class="main-nav-text" style="color: white;">Koleksi Video Pembelajaran</h4>
+        <p class="main-nav-text" style="color: rgb(202, 202, 202);">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
+        <div class="navbar">
+            <a href="#home" style="color: white;">Semua Kelas</a>
+            <a href="#news" style="color: white;">Pemasaran</a>                    
+            <div class="dropdown">
+              <button class="btn btn-warning btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border: radius 10px; color: white;">
+                 Lainnya
+              </button>
+              <ul class="dropdown-content">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+
+            </div>
+          </div>
+    </div>
+    <div class="album py-5" style="width: 220%; margin-left: 100px;">
+      <div class="container-content">
+        <div class="container">
+          <div class="row ">
+            <div class="content-item" style=" display: flex; gap: 16px; align-items: center; padding-bottom: 0; margin-top: 20px;">
+              <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                <img src="/images/course-01.jpg" alt="Course One" style="border-radius: 10px;">
+                <div class="down-content">
+                  <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                  <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                  <div class="profile-card">
+                    <div class="row g-2" style=" margin-top: -10px; display: block;">
+                      <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                        <br>
+                        <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                    </div>
+                  </div>
+                    <div style=" display: flex; gap: 10px;">
+                      <div style="display: flex; ">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                        <div class="col-md-4 ms-auto">
+                        <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                          Rp250K
+                        </p>
+                      </div>
+                      </div>                       
+                    </div>
+                </div>
+              </div>
+
+              <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                <img src="/images/course-02.jpg" alt="Course One" style="border-radius: 10px;">
+                <div class="down-content">
+                  <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                  <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                  <div class="profile-card">
+                    <div class="row g-2" style=" margin-top: -10px; display: block;">
+                      <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                        <br>
+                        <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                    </div>
+                  </div>
+                    <div style=" display: flex; gap: 10px;">
+                      <div style="display: flex; ">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                        <div class="col-md-4 ms-auto">
+                        <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                          Rp250K
+                        </p>
+                      </div>
+                      </div>                       
+                    </div>
+                </div>
+              </div>
+
+              <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                <img src="/images/course-03.jpg" alt="Course One" style="border-radius: 10px;">
+                <div class="down-content">
+                  <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                  <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                  <div class="profile-card">
+                    <div class="row g-2" style=" margin-top: -10px; display: block;">
+                      <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                        <br>
+                        <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                    </div>
+                  </div>
+                    <div style=" display: flex; gap: 10px;">
+                      <div style="display: flex; ">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                        <div class="col-md-4 ms-auto">
+                        <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                          Rp250K
+                        </p>
+                      </div>
+                      </div>                       
+                    </div>
+                </div>
+              </div>
+
+          </div>
+        <div class="container">
+            <div class="row ">
+              <div class="content-item" style=" display: flex; gap: 16px; align-items: center; padding-bottom: 0; margin-top: 20px;">
+                <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                  <img src="/images/course-04.jpg" alt="Course One" style="border-radius: 10px;">
+                  <div class="down-content">
+                    <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                    <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                    <div class="profile-card">
+                      <div class="row g-2" style=" margin-top: -10px; display: block;">
+                        <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                          <br>
+                          <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                      </div>
+                    </div>
+                      <div style=" display: flex; gap: 10px;">
+                        <div style="display: flex; ">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                          <div class="col-md-4 ms-auto">
+                          <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                            Rp250K
+                          </p>
+                        </div>
+                        </div>                       
+                      </div>
+                  </div>
+                </div>
+  
+                <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                  <img src="/images/course-01.jpg" alt="Course One" style="border-radius: 10px;">
+                  <div class="down-content">
+                    <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                    <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                    <div class="profile-card">
+                      <div class="row g-2" style=" margin-top: -10px; display: block;">
+                        <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                          <br>
+                          <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                      </div>
+                    </div>
+                      <div style=" display: flex; gap: 10px;">
+                        <div style="display: flex; ">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                          <div class="col-md-4 ms-auto">
+                          <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                            Rp250K
+                          </p>
+                        </div>
+                        </div>                       
+                      </div>
+                  </div>
+                </div>
+  
+                <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                  <img src="/images/course-02.jpg" alt="Course One" style="border-radius: 10px;">
+                  <div class="down-content">
+                    <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                    <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                    <div class="profile-card">
+                      <div class="row g-2" style=" margin-top: -10px; display: block;">
+                        <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                          <br>
+                          <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                      </div>
+                    </div>
+                      <div style=" display: flex; gap: 10px;">
+                        <div style="display: flex; ">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                          <div class="col-md-4 ms-auto">
+                          <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                            Rp250K
+                          </p>
+                        </div>
+                        </div>                       
+                      </div>
+                  </div>
+                </div>
+  
+          </div>
+
+          <div class="container">
+            <div class="row ">
+              <div class="content-item" style=" display: flex; gap: 16px; align-items: center; padding-bottom: 0; margin-top: 20px;">
+                <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                  <img src="/images/course-03.jpg" alt="Course One" style="border-radius: 10px;">
+                  <div class="down-content">
+                    <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                    <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                    <div class="profile-card">
+                      <div class="row g-2" style=" margin-top: -10px; display: block;">
+                        <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                          <br>
+                          <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                      </div>
+                    </div>
+                      <div style=" display: flex; gap: 10px;">
+                        <div style="display: flex; ">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                          <div class="col-md-4 ms-auto">
+                          <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                            Rp250K
+                          </p>
+                        </div>
+                        </div>                       
+                      </div>
+                  </div>
+                </div>
+  
+                <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                  <img src="/images/course-04.jpg" alt="Course One" style="border-radius: 10px;">
+                  <div class="down-content">
+                    <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                    <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                    <div class="profile-card">
+                      <div class="row g-2" style=" margin-top: -10px; display: block;">
+                        <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                          <br>
+                          <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                      </div>
+                    </div>
+                      <div style=" display: flex; gap: 10px;">
+                        <div style="display: flex; ">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                          <div class="col-md-4 ms-auto">
+                          <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                            Rp250K
+                          </p>
+                        </div>
+                        </div>                       
+                      </div>
+                  </div>
+                </div>
+  
+                <div class="item" style="height: 26rem; background-color: white; border-radius: 10px; color: black;">
+                  <img src="/images/course-01.jpg" alt="Course One" style="border-radius: 10px;">
+                  <div class="down-content">
+                    <h5 style="text-align: left;">Big 4 Auditor Financial Analyst</h5>
+                    <p class="card-text" style="text-align: left; font-size: 12px;">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan  kurikulum terbaik</p> 
+                    <div class="profile-card">
+                      <div class="row g-2" style=" margin-top: -10px; display: block;">
+                        <p style="text-align: left; color:black; gap: 10px;"><img src="/images/Avatar.png" style="float: left; margin: 5px;;"><span style="font-size: 15px; font-weight: 600;">Muhammad Sumbul</span>
+                          <br>
+                          <span class="ban2" style="font-size: 12px;">Senior Acountant di Gojek</span></p>
+                      </div>
+                    </div>
+                      <div style=" display: flex; gap: 10px;">
+                        <div style="display: flex; ">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p style="font-size: 15px; opacity: 0.7;"> 4.0(129)</p>
+                          <div class="col-md-4 ms-auto">
+                          <p style="display: flex; margin-top: -10px; margin-left: 24px; color: #3ECF4C; font-weight: 600; font-size: 24px;">
+                            Rp250K
+                          </p>
+                        </div>
+                        </div>                       
+                      </div>
+                  </div>
+                </div>
+  
+          </div>
+        </div> 
+    </div>
+
+    <div class="container-xl">
+      <div class="outro">
+              <p class="main-text" style=" font-size: 32px; text-align: center; color: rgb(255, 189, 66); opacity: 0.7;">NEWSLETTER</p>
+              <p class="second-text" style="font-size: 32px; text-align: center; color: white;">Mau Belajar Lebih Banyak?</p>
+              <p class="thrid-text" style="font-size: 16px; text-align: center; color: white;">Daftarkan dirimu untuk mendapatkan informasi terbaru dan <br>penawaran spesial dari program-program terbaik hariesok.id</p>
+            <form style="margin-left: 350px;">
+              <div class="input-group" style="width: 400px; height: 30px;">
+                <input type="text" class="form-control" placeholder="Your Email">
+                <span class="input-group-text btn btn-warning">Subscribe</span>
+              </div>
+            </form>
+      </div>      
+    </div> 
+    </div>
+
+<div class="footer" style=" background-color: white; width:98vw; height: 350px; margin-left: -107px; margin-bottom: 0;">
+      <div class="container-xl" style="display: flex; margin-top: 40px; gap: 16px;">
+        <div class="item-footer">
+          <img src="/asset/vf-transformed.png" alt="mdo" width="100" height="100" style="margin-left: 30px; margin-top: 20px;" >
+          <p class="card-title" style="margin-left: 30px; text-align: left; font-size: 18px; font-weight: 600;">Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!</p>
+          <p class="card-text" style="font-size: 16px; margin-left: 30px; text-align: left; color: #333333AD; ">Jl. Usman Effendi No. 50 Lowokwaru, Malang.</p>
+          <p class="card-text" style="font-size: 16px; margin-left: 30px; text-align: left; color: #333333AD;">+62-877-7123-1234</p>
+        </div>
+        <div class="list kategori" style="margin-left: 30px; margin-top: 50px; row-gap: 15px;">
+          <span class="list-group-item" style="font-size: 18px; font-weight: 600;">Kategori</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Digital & Teknologi</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Pemasaran</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Manajemen Bisnis</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Pengembangan Dirii</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Desain</span>
+        </div>
+        <div class="list kategori" style="margin-left: 30px; margin-top: 50px; ">
+          <span class="list-group-item" style="font-size: 18px; font-weight: 600;">Perusahaan</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Tentang Kami</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">FAQ</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Kebijakan Privasi</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Ketentuan Layanan</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Bantuan</span>
+        </div>
+        <div class="list kategori" style="margin-left: 30px; margin-top: 50px; ">
+          <span class="list-group-item" style="font-size: 18px; font-weight: 600;">Komunitas</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Tips Sukses</span>
+          <span href ="#" class="list-group-item" style="font-size: 16px; color: #333333AD; ">Blog</span>
+        </div>
+
+      </div>
+        <hr>
+      <div class="copy-right" style="margin-left: 100px; margin-top: 50px; display: flex;">
+        <p style="font-size: 16px; color: #333333AD;">©2024  Gerobak Ikan All Rights Reserved.</p>
+        <div class="icon" style="display: flex; margin-left: 500px; gap: 15px;">
+          <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+          
+          
+        </div>
+      </div>
+</div>
+</body>
+
+
+</html>
